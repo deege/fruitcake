@@ -96,6 +96,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -688,6 +689,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Townfolk-Old-F-001_8: -2202330914742911235
+      Townfolk-Old-F-001_7: -3066307159508267319
+      Townfolk-Old-F-001_15: -1516300492145366907
+      Townfolk-Old-F-001_9: 8713332655766551848
+      Townfolk-Old-F-001_4: 728837635693110055
+      Townfolk-Old-F-001_19: 3675970224679627967
+      Townfolk-Old-F-001_0: 6436740655204375133
+      Townfolk-Old-F-001_13: -1549950706759688423
+      Townfolk-Old-F-001_14: 7127680981525859338
+      Townfolk-Old-F-001_3: 8482692408885849176
+      Townfolk-Old-F-001_5: -1189514087807659033
+      Townfolk-Old-F-001_10: 5716783801631187376
+      Townfolk-Old-F-001_18: -6415203549052203550
+      Townfolk-Old-F-001_17: -9204881370589221701
+      Townfolk-Old-F-001_21: 2150447697705248767
+      Townfolk-Old-F-001_22: -595001270766061213
+      Townfolk-Old-F-001_1: 3719476818317730126
+      Townfolk-Old-F-001_16: -6976597077539922673
+      Townfolk-Old-F-001_6: -5161965837007057535
+      Townfolk-Old-F-001_2: -559710342232229113
+      Townfolk-Old-F-001_11: 3499656939399970129
+      Townfolk-Old-F-001_12: -8915898432528294925
+      Townfolk-Old-F-001_23: -7541367106171321999
+      Townfolk-Old-F-001_20: -1730756479711175815
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

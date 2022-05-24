@@ -60,6 +60,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -400,6 +401,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      angel-f-002_8: 7172587407447262661
+      angel-f-002_6: 364267558912011212
+      angel-f-002_11: 6090964986074312225
+      angel-f-002_10: 712460611632837550
+      angel-f-002_0: 114754538496419267
+      angel-f-002_5: -6542813183245214571
+      angel-f-002_3: -2783984138237910520
+      angel-f-002_4: -7937997753587113831
+      angel-f-002_1: 7333613294591488219
+      angel-f-002_2: -8487606039028178186
+      angel-f-002_9: 6877438078777135680
+      angel-f-002_7: 4883619541235546687
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

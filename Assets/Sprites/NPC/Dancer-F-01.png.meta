@@ -96,6 +96,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -688,6 +689,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Dancer-F-01_2: -5243954080059609013
+      Dancer-F-01_5: -3707343954081836531
+      Dancer-F-01_11: -4411963585791524968
+      Dancer-F-01_12: -8713848971753081408
+      Dancer-F-01_21: -5111778938599072895
+      Dancer-F-01_23: 6039032652250609584
+      Dancer-F-01_7: 7556473743473641440
+      Dancer-F-01_15: 3868367092587803476
+      Dancer-F-01_16: -9206864329341666271
+      Dancer-F-01_22: 1639516259100174338
+      Dancer-F-01_20: 4872041881037315744
+      Dancer-F-01_14: 6930525900596312245
+      Dancer-F-01_8: 2050587402628432537
+      Dancer-F-01_19: 5070238485732301633
+      Dancer-F-01_0: -8568027749962581735
+      Dancer-F-01_13: -1473364975055341785
+      Dancer-F-01_6: -8924579110885926575
+      Dancer-F-01_1: 3229660866311479310
+      Dancer-F-01_3: -763474049714915793
+      Dancer-F-01_17: -7600054206196072632
+      Dancer-F-01_10: 6049766189356415901
+      Dancer-F-01_4: -1860409088523820290
+      Dancer-F-01_9: -9054487870495013013
+      Dancer-F-01_18: 9186088836062480923
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

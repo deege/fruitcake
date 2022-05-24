@@ -96,6 +96,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -688,6 +689,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Aristocrate-F-01_15: 1911009676190890563
+      Aristocrate-F-01_1: -1126013701284382221
+      Aristocrate-F-01_9: -6469312837805327651
+      Aristocrate-F-01_10: 6908299380830192248
+      Aristocrate-F-01_22: -3583385171211249322
+      Aristocrate-F-01_6: 8340506964474669726
+      Aristocrate-F-01_2: -3997686489801103600
+      Aristocrate-F-01_23: -1115487160240370024
+      Aristocrate-F-01_16: -5320673451352974648
+      Aristocrate-F-01_17: 7986275906755574322
+      Aristocrate-F-01_14: -8969765452563348402
+      Aristocrate-F-01_20: 2812569861799755216
+      Aristocrate-F-01_21: 9894399390810093
+      Aristocrate-F-01_3: -7788539928502102429
+      Aristocrate-F-01_5: 894764737004755437
+      Aristocrate-F-01_13: 954356198587966414
+      Aristocrate-F-01_8: -4505062896200034
+      Aristocrate-F-01_7: -2741377234805245905
+      Aristocrate-F-01_19: 8604163436779092049
+      Aristocrate-F-01_12: -6654853885782325538
+      Aristocrate-F-01_4: 4858355893933541168
+      Aristocrate-F-01_11: -9091983493518130021
+      Aristocrate-F-01_0: -5636581731348870012
+      Aristocrate-F-01_18: 2667512066875515939
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
