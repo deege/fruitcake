@@ -10,18 +10,29 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rigidbody2d;
     Animator animator;
 
+    Facing facing;
+
+    Vector3 movementDirection = Vector3.down;
+
     [SerializeField] float moveSpeed = 10.0f;
+    Shooter shooter;
+
+    void Awake() {
+        shooter = GetComponent<Shooter>();
+    }
 
     // Start is called before the first frame update
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        facing = GetComponent<Facing>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        facing.SetFacingByDirection(moveInput);
         UpdateAnimation();
         Run();
     }
@@ -30,8 +41,18 @@ public class PlayerMovement : MonoBehaviour
         moveInput = value.Get<Vector2>();
     }
 
+    void OnFire(InputValue value) {
+        if (shooter != null) {
+            shooter.isFiring = value.isPressed;
+        }
+    }
+
     void Run() {
         rigidbody2d.velocity = moveInput * moveSpeed ;
+    }
+    
+    public Vector3 getMovementDirection() {
+        return movementDirection;
     }
 
     void UpdateAnimation() {

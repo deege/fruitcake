@@ -10,4 +10,5 @@ This game is similar in play and takes inspiration from [Robotron 2084](https://
 * [Grassland Tileset](https://opengameart.org/content/whispers-of-avalon-grassland-tileset)
 * [Angels](https://opengameart.org/content/angels)
 * [Other NPCs](https://opengameart.org/content/24x32-characters-with-faces-big-pack)
+* [Projectiles](https://opengameart.org/content/pure-projectile-magic-effect)
 * [A* Pathfinding Project](https://arongranberg.com/astar/download)
