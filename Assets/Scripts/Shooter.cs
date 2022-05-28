@@ -15,6 +15,8 @@ public class Shooter : MonoBehaviour
 
     Facing facing;
 
+    const float TO_DEG = 180/Mathf.PI;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,10 +48,12 @@ public class Shooter : MonoBehaviour
                 instancePos.y = -instancePos.y;
             }
             GameObject instance = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+          
             Rigidbody2D rb = instance.GetComponent<Rigidbody2D>();
             if ((facing != null) && (rb != null)) {
                 Vector3 direction = facing.Direction;
-                Debug.Log(direction);
+                Vector3 shootingRotation = new Vector3(0,0, Mathf.Atan2(facing.Direction.y, facing.Direction.x) * TO_DEG);
+                instance.transform.Rotate(shootingRotation);
                 rb.velocity = direction * speed;
             }
             Destroy(instance, lifespan);
