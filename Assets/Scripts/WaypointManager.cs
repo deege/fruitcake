@@ -8,7 +8,7 @@ public class WaypointManager : MonoBehaviour
      List<Transform> waypoints;
 
     public Transform GetRandomDestination() {
-        int index = Random.Range(0, waypoints.Count -1);
+        int index = Random.Range(0, waypoints.Count);
         return waypoints[index];
     }
 

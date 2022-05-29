@@ -28,7 +28,7 @@ public class NPCSpawner : MonoBehaviour
 
     void SpawnNPC() {
         if ((npcPrefabs != null) && (npcPrefabs.Count > 0) && (waypointManager != null)) {
-            int npcIndex = Random.Range(0, npcPrefabs.Count - 1);
+            int npcIndex = Random.Range(0, npcPrefabs.Count);
             GameObject npc = npcPrefabs[npcIndex];
             GameObject instance = Instantiate(npc, waypointManager.GetRandomDestination().position, Quaternion.identity, gameObject.transform);
             DestinationChecker checker = instance.GetComponent<DestinationChecker>();
