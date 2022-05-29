@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 8150447662426022580}
   - component: {fileID: 4545533771213953597}
   - component: {fileID: 2077948006}
+  - component: {fileID: 7663095791052174380}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -234,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c84f7153a53f94542858e58632d45db9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 0}
+  projectilePrefab: {fileID: 8987860239184067284, guid: d395c96857aee41a1854b77801efe362, type: 3}
   speed: 20
   lifespan: 1
   firerate: 0.2
@@ -251,3 +252,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a354b461fd7a44a579c62437d84d4a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7663095791052174380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5530134987567796643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed04a3bd323bd46e89661c825960ee2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shooting: {fileID: 8300000, guid: 613250dc1b93043d7b82d3d563dcb5fc, type: 3}
+  spawning: {fileID: 0}
+  hit: {fileID: 8300000, guid: 7cf9167a5239d254a84b44cf35c8d481, type: 3}
+  dying: {fileID: 8300000, guid: d30c820ff550c794a86e903ad647e4ee, type: 3}
+  volume: 1

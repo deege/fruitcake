@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 4333391398653409002}
   - component: {fileID: 5901678250839003850}
   - component: {fileID: 728389047308041908}
+  - component: {fileID: 3392157478838332836}
   m_Layer: 7
   m_Name: NPC_7
   m_TagString: Enemy
@@ -198,6 +199,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a354b461fd7a44a579c62437d84d4a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3392157478838332836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4333391398653408789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed04a3bd323bd46e89661c825960ee2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shooting: {fileID: 0}
+  spawning: {fileID: 0}
+  hit: {fileID: 8300000, guid: 50b441f111083504d90ad648f16723e0, type: 3}
+  dying: {fileID: 8300000, guid: cb7c6186be463124d898b380bf56317c, type: 3}
+  volume: 1
 --- !u!1 &4333391398988562048
 GameObject:
   m_ObjectHideFlags: 0

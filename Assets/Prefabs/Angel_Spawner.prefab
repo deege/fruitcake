@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8849846048231853026}
   - component: {fileID: 8730550815769966191}
+  - component: {fileID: 2537981912757242344}
   m_Layer: 0
   m_Name: Angel_Spawner
   m_TagString: Untagged
@@ -50,3 +51,21 @@ MonoBehaviour:
   - {fileID: 7364585869613618597, guid: 51916523e2d66458d8ff9263039dc483, type: 3}
   startingAngels: 5
   waypointManager: {fileID: 0}
+  player: {fileID: 0}
+--- !u!114 &2537981912757242344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6955675901032001719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed04a3bd323bd46e89661c825960ee2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shooting: {fileID: 8300000, guid: ba5b9da8b3b9af742abfa0fd399e1a0f, type: 3}
+  spawning: {fileID: 8300000, guid: 259e551dd79554ab895ee3d86f65daa4, type: 3}
+  hit: {fileID: 0}
+  dying: {fileID: 0}
+  volume: 1

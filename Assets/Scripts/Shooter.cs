@@ -12,6 +12,7 @@ public class Shooter : MonoBehaviour
 
     public bool isFiring = false;
     Coroutine firingCoroutine;
+    AudioPlayer audio;
 
     Facing facing;
 
@@ -21,6 +22,7 @@ public class Shooter : MonoBehaviour
     void Start()
     {
         facing = GetComponent<Facing>();
+        audio = GetComponent<AudioPlayer>();
     }
 
     // Update is called once per frame
@@ -55,6 +57,9 @@ public class Shooter : MonoBehaviour
                 Vector3 shootingRotation = new Vector3(0, 0, Mathf.Atan2(facing.Direction.y, facing.Direction.x) * TO_DEG);
                 instance.transform.Rotate(shootingRotation);
                 rb.velocity = direction * speed;
+            }
+            if (audio) {
+                audio.PlayShotClip();
             }
             Destroy(instance, lifespan);
             yield return new WaitForSeconds(firerate + Random.Range(-0.5f, 3.0f));

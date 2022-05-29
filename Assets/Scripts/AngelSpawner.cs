@@ -14,8 +14,11 @@ public class AngelSpawner : MonoBehaviour
     Coroutine respawnCoroutine;
     bool isSpawnStarted = false;
 
+    AudioPlayer audio;
+
 
     void Start() {
+        audio = GetComponent<AudioPlayer>();
         for (int i=0; i<=startingAngels; i++){
             SpawnAngel();
         }
@@ -45,6 +48,9 @@ public class AngelSpawner : MonoBehaviour
                 path.speed = Random.Range(2, 5);
                 Attack attack = instance.GetComponent<Attack>();
                 attack.target = player;
+            }
+            if (audio != null) {
+                audio.PlaySpawnClip();
             }
         }
     }
