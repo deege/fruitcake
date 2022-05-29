@@ -14,7 +14,5 @@ public class DamageDealer : MonoBehaviour
         if (gameObject.tag == "Bullet") {
             Destroy(gameObject);
         }
-    }
-
-   
+    }   
 }

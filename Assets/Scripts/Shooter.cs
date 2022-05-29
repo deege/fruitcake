@@ -52,7 +52,7 @@ public class Shooter : MonoBehaviour
             Rigidbody2D rb = instance.GetComponent<Rigidbody2D>();
             if ((facing != null) && (rb != null)) {
                 Vector3 direction = facing.Direction;
-                Vector3 shootingRotation = new Vector3(0,0, Mathf.Atan2(facing.Direction.y, facing.Direction.x) * TO_DEG);
+                Vector3 shootingRotation = new Vector3(0, 0, Mathf.Atan2(facing.Direction.y, facing.Direction.x) * TO_DEG);
                 instance.transform.Rotate(shootingRotation);
                 rb.velocity = direction * speed;
             }

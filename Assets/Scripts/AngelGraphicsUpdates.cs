@@ -8,6 +8,8 @@ public class AngelGraphicsUpdates : MonoBehaviour
     AIPath aiPath;
     Animator animator;
 
+    
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -26,9 +28,6 @@ public class AngelGraphicsUpdates : MonoBehaviour
         bool goingDown = aiPath.desiredVelocity.y < 0;
 
         bool xGreaterThanY = Mathf.Abs(aiPath.desiredVelocity.x) > Mathf.Abs(aiPath.desiredVelocity.y);
-
-
-
         this.animator.SetBool("isMovingLeft", goingLeft && xGreaterThanY);
         this.animator.SetBool("isMovingRight", goingRight && xGreaterThanY);        
         

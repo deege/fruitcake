@@ -12,8 +12,6 @@ public class PlayerMovement : MonoBehaviour
 
     Facing facing;
 
-    Vector3 movementDirection = Vector3.down;
-
     [SerializeField] float moveSpeed = 10.0f;
     Shooter shooter;
 
@@ -49,10 +47,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Run() {
         rigidbody2d.velocity = moveInput * moveSpeed ;
-    }
-    
-    public Vector3 getMovementDirection() {
-        return movementDirection;
     }
 
     void UpdateAnimation() {
