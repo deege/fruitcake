@@ -7,7 +7,9 @@ public class NPCSpawner : MonoBehaviour
 {
     
     [SerializeField] List<GameObject> npcPrefabs;
-    [SerializeField] int maxNPCs = 10;
+
+    [SerializeField] int maxNPCs = 20;
+    
 
     [SerializeField] WaypointManager waypointManager;
 
@@ -39,4 +41,6 @@ public class NPCSpawner : MonoBehaviour
             path.speed = Random.Range(1, 5);
         }
     }
+
+    
 }

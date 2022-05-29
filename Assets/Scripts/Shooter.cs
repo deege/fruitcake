@@ -57,7 +57,7 @@ public class Shooter : MonoBehaviour
                 rb.velocity = direction * speed;
             }
             Destroy(instance, lifespan);
-            yield return new WaitForSeconds(firerate);
+            yield return new WaitForSeconds(firerate + Random.Range(-0.5f, 3.0f));
         }
     }
 }

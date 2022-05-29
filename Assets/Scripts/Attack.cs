@@ -5,7 +5,7 @@ using Pathfinding;
 
 public class Attack : MonoBehaviour
 {
-    [SerializeField] GameObject target;
+    [SerializeField] public GameObject target;
     [SerializeField] float firingRate = 1.0f;
     float distanceToTarget = 0.0f;
     Shooter shooter;

@@ -16,7 +16,7 @@ public class WaypointManager : MonoBehaviour
         return waypoints;
     }
 
-    void Start()
+    void Awake()
     {
         waypoints = new List<Transform>();
         foreach (Transform child in transform) {

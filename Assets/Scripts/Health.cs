@@ -6,9 +6,7 @@ public class Health : MonoBehaviour
 {
    [SerializeField] int health = 50;
 
-   void OnTriggerEnter2D(Collider2D other) {
-       Debug.Log("Other is" + other.tag);
-       Debug.Log("GO    is " + gameObject.tag);
+   void OnTriggerEnter2D(Collider2D other) { 
        if ((other.tag == "Wall") && (gameObject.tag == "Bullet")) {
            Destroy(gameObject);
        }
