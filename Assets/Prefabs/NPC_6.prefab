@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 5901678250839003850}
   - component: {fileID: -1645790301022855391}
   - component: {fileID: -2776512225966405080}
+  - component: {fileID: -5688156920346479150}
   m_Layer: 7
   m_Name: NPC_6
   m_TagString: Enemy
@@ -55,6 +56,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  keeperGO: {fileID: 3537282163204245192, guid: 43933e1ade2ae470984a9e98a552cef0, type: 3}
 --- !u!114 &4333391398653409001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,6 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  keeperGO: {fileID: 0}
 --- !u!70 &4333391398653409005
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -230,6 +233,19 @@ MonoBehaviour:
   hit: {fileID: 8300000, guid: d2e36b4491903474c941144214329504, type: 3}
   dying: {fileID: 8300000, guid: 77007d005277598499ebbff61b13679e, type: 3}
   volume: 1
+--- !u!114 &-5688156920346479150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4333391398653408789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd2dd189547743f989802e35ffe4d50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 10
 --- !u!1 &4333391398988562048
 GameObject:
   m_ObjectHideFlags: 0

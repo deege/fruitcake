@@ -36,7 +36,6 @@ public class AngelSpawner : MonoBehaviour
 
     public void SpawnAngel() {
         DamageDealer[] allChildren = GetComponentsInChildren<DamageDealer>();
-        Debug.Log("Angels = " + allChildren.Length);
         if (allChildren.Length <= startingAngels) {
             if ((angelPrefabs != null) && (angelPrefabs.Count > 0) && (waypointManager != null)) {
                 int angelIndex = Random.Range(0, angelPrefabs.Count);

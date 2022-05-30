@@ -7,9 +7,14 @@ public class Health : MonoBehaviour
    [SerializeField] int health = 50;
 
    AudioPlayer audio;
+   ScoreValue scoreValue;
+   ScoreKeeper keeper;
+   
 
    void Start() {
        audio = GetComponent<AudioPlayer>();
+       scoreValue = GetComponent<ScoreValue>();
+       keeper = FindObjectOfType<ScoreKeeper>();
    }
 
    void OnTriggerEnter2D(Collider2D other) { 
@@ -34,10 +39,25 @@ public class Health : MonoBehaviour
             audio.PlayHitClip();
         }
         if (health <= 0) {
-            if (audio != null) {
-                audio.PlayDeathClip();
-            }
-            Destroy(gameObject);
+            Die();
         }
+    }
+
+    public int GetHealth() {
+        return this.health;
+    }
+
+    public void SetHealth(int health) {
+        this.health = health;
+    }
+
+    void Die() {
+        if (audio != null) {
+            audio.PlayDeathClip();
+        }       
+        if ((keeper != null) && (scoreValue != null)) {
+            keeper.AddScore(scoreValue.GetScoreValue());
+        }
+        Destroy(gameObject);
     }
 }

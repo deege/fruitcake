@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: -4491042601709728524}
   - component: {fileID: -3522571024737439142}
   - component: {fileID: 475591289170015286}
+  - component: {fileID: 3939446941876943098}
   m_Layer: 7
   m_Name: Angel_Three
   m_TagString: Enemy
@@ -218,6 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  keeperGO: {fileID: 3537282163204245192, guid: 43933e1ade2ae470984a9e98a552cef0, type: 3}
 --- !u!114 &-1144062063311486315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,6 +293,19 @@ MonoBehaviour:
   hit: {fileID: 8300000, guid: c5311bb6d7d14a14c80bfdcaf3f07b8c, type: 3}
   dying: {fileID: 8300000, guid: 8f4f375ffa0090842aeb8c5e2df71b5f, type: 3}
   volume: 1
+--- !u!114 &3939446941876943098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7364585869613618597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd2dd189547743f989802e35ffe4d50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 100
 --- !u!1 &7364585870450489586
 GameObject:
   m_ObjectHideFlags: 0
