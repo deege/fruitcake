@@ -28,3 +28,4 @@ public class UIDisplay : MonoBehaviour
         scoreText.text = keeper.GetScore().ToString();
     }
 }
+ 
